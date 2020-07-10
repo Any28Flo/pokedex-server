@@ -24,3 +24,4 @@ yarn.lock.idea
 yarn.lock
 .idea
 yarn-error.log
+.env
