@@ -6,8 +6,7 @@ const router  = express.Router();
 const uploader = require('../configs/cloudinary-setup');
 
 router.post('/upload', uploader.single('imageUrl'), function (req, res) {
-
-    res.json({ secure_url: req.file.path });
+   res.json({ secure_url: req.file.path });
 
 });
 module.exports = router;
